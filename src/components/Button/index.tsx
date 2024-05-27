@@ -8,7 +8,7 @@ type Props = {
   children: string
 }
 
-const Botao = ({ type, title, to, onClick, children }: Props) => {
+const Button = ({ type, title, to, onClick, children }: Props) => {
   if (type === 'button') {
     return (
       <ButtonContainer type="button" onClick={onClick} title={title}>
@@ -24,4 +24,4 @@ const Botao = ({ type, title, to, onClick, children }: Props) => {
   )
 }
 
-export default Botao
+export default Button

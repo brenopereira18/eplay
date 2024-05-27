@@ -2,7 +2,7 @@ import * as S from './styles'
 
 import bannerImg from '../../assets/images/banner-homem-aranha.png'
 import Tag from '../Tag'
-import Botao from '../Button'
+import Button from '../Button'
 
 const Banner = () => {
   return (
@@ -16,13 +16,13 @@ const Banner = () => {
             por apenas R$ 99,90
           </S.Preco>
         </div>
-        <Botao
+        <Button
           type="link"
           to="/produto"
           title="Clique aqui para aproveitar esta oferta"
         >
           Aproveitar
-        </Botao>
+        </Button>
       </div>
     </S.Imagem>
   )

@@ -1,9 +1,14 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { breakpoints, cores } from '../../styles'
 
 export const Items = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 12px;
+  }
 `
 
 export const Action = styled.div`

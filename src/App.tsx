@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Provider } from 'react-redux'
 
 import Header from './components/Header'
 import { GlobalCss } from './styles'
@@ -6,6 +7,8 @@ import Home from './pages/Home'
 import Categories from './pages/Categories'
 import Product from './pages/Product'
 import Footer from './components/Footer'
+import { store } from './store'
+import Cart from './components/Cart'
 
 const Rotas = () => (
   <Routes>
@@ -17,14 +20,17 @@ const Rotas = () => (
 
 function App() {
   return (
-    <BrowserRouter>
-      <GlobalCss />
-      <div className="container">
-        <Header />
-      </div>
-      <Rotas />
-      <Footer />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <GlobalCss />
+        <div className="container">
+          <Header />
+        </div>
+        <Rotas />
+        <Footer />
+        <Cart />
+      </BrowserRouter>
+    </Provider>
   )
 }
 

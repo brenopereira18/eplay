@@ -1,6 +1,5 @@
 import Product from '../Product'
 
-import { Game } from '../../pages/Home'
 import { convertToBrl } from '../../utils'
 
 import * as S from './styles'

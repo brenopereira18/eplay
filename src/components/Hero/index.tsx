@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux'
 import Button from '../Button'
 import Tag from '../Tag'
 
-import { Game } from '../../pages/Home'
 import { convertToBrl } from '../../utils/index'
 import { add } from '../../store/reducers/cart'
 

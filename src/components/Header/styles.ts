@@ -23,6 +23,9 @@ export const HeaderBar = styled.header`
     font-weight: bold;
     text-decoration: none;
   }
+  h1 {
+    line-height: 0;
+  }
 `
 
 export const HeaderRow = styled.div`
